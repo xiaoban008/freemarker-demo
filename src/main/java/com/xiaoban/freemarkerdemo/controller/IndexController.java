@@ -24,7 +24,8 @@ public class IndexController {
         names.add("张三");
         names.add("李四");
         names.add("王五");
-        model.addAttribute("name","xiaoban");
+        String name = "xiaoban";
+        model.addAttribute("name",name);
         model.addAttribute("names",names);
         return "index";
     }
